@@ -16,4 +16,6 @@ public static final String LEAVE_PAGE_TITLE="Leave";
 public static final String APPLY_PAGE_TITLE="Apply";
 public  static final String APPLY_LEAVE_PAGE_TITLE="Apply Leave";
 public static final String ENTITLEMENTS_NAME="Entitlements";
+//AdminPage
+public static final String ADMIN_PAGE_USERNAME="swati";
 }

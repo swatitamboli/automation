@@ -24,6 +24,8 @@ public class HomePage {
 	
 	@FindBy(xpath = "//span[text()='Leave']")
 	WebElement leaveButton;
+	@FindBy(className = "oxd-main-menu-item active")
+	WebElement adminButton;
 	
 	String xpath = "//li[text()='RANDOM']";
 	
@@ -85,5 +87,10 @@ public class HomePage {
 	{
 		leaveButton.click();
 		return new LeavePage(driver);
+	}
+	public AdminPage navigateToAdminPage() 
+	{
+		adminButton.click();
+		return new AdminPage(driver);
 	}
 }

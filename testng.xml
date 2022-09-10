@@ -5,6 +5,7 @@
     <classes>
        <class name="tests.HomePageTest"/>
        <class name="tests.LeavePageTest"></class>
+       <class name="tests.AdminPageTest"></class>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
