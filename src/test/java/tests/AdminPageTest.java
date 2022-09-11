@@ -17,4 +17,10 @@ String actual=adminpage.getUsername();
 Assert.assertEquals(actual, Constants.ADMIN_PAGE_USERNAME);
 
 }
+@Test
+public void isSearchButtonPresent() 
+{
+	AdminPage adminpage=homePage.navigateToAdminPage();	
+	Assert.assertEquals(adminpage.isSearchButtonPresent(), true);
+}
 }
