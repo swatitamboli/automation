@@ -26,6 +26,8 @@ public class HomePage {
 	WebElement leaveButton;
 	@FindBy(className = "oxd-main-menu-item active")
 	WebElement adminButton;
+	@FindBy(className = "oxd-main-menu-item active")
+	WebElement timeButton;
 	
 	String xpath = "//li[text()='RANDOM']";
 	
@@ -92,5 +94,10 @@ public class HomePage {
 	{
 		adminButton.click();
 		return new AdminPage(driver);
+	}
+	public TimePage navigateToTimePage()
+	{
+	timeButton.click();
+	return new TimePage(driver);
 	}
 }
