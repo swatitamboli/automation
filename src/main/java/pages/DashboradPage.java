@@ -5,18 +5,17 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class TimePage {
-	@FindBy(xpath = "//input[@placeholder='Type for hints...']")
-	WebElement empName;
+public class DashboradPage {
 WebDriver driver;
-public TimePage(WebDriver driver)
+@FindBy(xpath = "//h6[text()='Dashboard']")
+WebElement dashborad;
+public DashboradPage (WebDriver driver)
 {
-	this.driver = driver;
+	this.driver=driver;
 	PageFactory.initElements(driver, this);
 }
-public boolean getEmployeeName() 
+public boolean isDashboradPresent() 
 {
-	
-	return empName.isDisplayed();
+	return dashborad.isDisplayed();
 }
 }

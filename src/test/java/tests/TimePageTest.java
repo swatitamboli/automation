@@ -12,7 +12,7 @@ public class TimePageTest extends BaseTest {
 public void verifyEmployeeName()
 {
 	TimePage timepage=homePage.navigateToTimePage();
-	String actual=timepage.getEmployeeName();
-	Assert.assertEquals(actual, Constants.TIME_PAGE_EMPOLYEENAME);
+	boolean actual=timepage.getEmployeeName();
+	Assert.assertEquals(actual, true);
 }
 }

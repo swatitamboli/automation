@@ -8,28 +8,9 @@
           <include name="verifyUsername"/>
           <include name="setup"/>
           <include name="afterMethod"/>
-          <include name="isSearchButtonPresent"/>
           <include name="beforeMethod"/>
         </methods>
       </class> <!-- tests.AdminPageTest -->
-      <class name="tests.HomePageTest">
-        <methods>
-          <include name="setup"/>
-          <include name="afterMethod"/>
-          <include name="verifyMenuItems"/>
-          <include name="verifyUserName"/>
-          <include name="beforeMethod"/>
-        </methods>
-      </class> <!-- tests.HomePageTest -->
-      <class name="tests.LeavePageTest">
-        <methods>
-          <include name="setup"/>
-          <include name="afterMethod"/>
-          <include name="isSearchButtonPreset"/>
-          <include name="beforeMethod"/>
-          <include name="isResetButtonPreset"/>
-        </methods>
-      </class> <!-- tests.LeavePageTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

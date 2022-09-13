@@ -13,8 +13,8 @@ public class AdminPageTest extends BaseTest {
 public void verifyUsername() 
 {
 AdminPage adminpage=homePage.navigateToAdminPage();	
-String actual=adminpage.getUsername();
-Assert.assertEquals(actual, Constants.ADMIN_PAGE_USERNAME);
+boolean actual=adminpage.getUsername();
+Assert.assertEquals(actual,true);
 
 }
 @Test
