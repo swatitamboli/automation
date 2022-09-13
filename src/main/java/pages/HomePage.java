@@ -24,11 +24,12 @@ public class HomePage {
 	
 	@FindBy(xpath = "//span[text()='Leave']")
 	WebElement leaveButton;
-	@FindBy(className = "oxd-main-menu-item active")
+	@FindBy(xpath = "//span[text()='Admin']")
 	WebElement adminButton;
-	@FindBy(className = "oxd-main-menu-item active")
+	@FindBy(xpath = "//span[text()='Time']")
 	WebElement timeButton;
-	
+	@FindBy(xpath = "//span[text()='Dashboard']")
+	WebElement dashboardButton;
 	String xpath = "//li[text()='RANDOM']";
 	
 	WebDriver driver;
@@ -99,5 +100,10 @@ public class HomePage {
 	{
 	timeButton.click();
 	return new TimePage(driver);
+	}
+	public  DashboradPage navigateToDashboradPage()
+	{
+		dashboardButton.click();
+		return new DashboradPage(driver);
 	}
 }

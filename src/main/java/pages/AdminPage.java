@@ -6,7 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class AdminPage {
-	@FindBy(xpath = "//label[text()='Username']/following::input")
+	@FindBy(xpath = "/label[text()='Username']/following::input")
 	WebElement Username;
 	@FindBy(xpath = "//button[@type='submit']")
 	WebElement searchButton;
@@ -19,10 +19,10 @@ public AdminPage(WebDriver driver) {
 }
 
 
-public String getUsername() 
+public boolean getUsername() 
 {
-	Username.sendKeys("swati");
-	return Username.getText();
+	
+	return Username.isDisplayed();
 }
 public boolean isSearchButtonPresent() 
 {
